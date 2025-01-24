@@ -98,7 +98,7 @@ nav {
 
 /* main bannere */
 .main-banner {
-  background-image: url("../IMG/mainbanner.png");
+  background-image: url("mainbanner.png");
   background-size: cover;
   background-position: center;
   padding: 10rem 0;
