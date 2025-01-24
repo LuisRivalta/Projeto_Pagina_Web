@@ -1,0 +1,291 @@
+/* Geral */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Helvetica;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2f2f2f;
+}
+
+h1,
+h2,
+h3 {
+  color: #bebebe;
+}
+
+p {
+  color: #bebebe;
+}
+
+/* NAV-Bar */
+
+.navbar-container {
+  width: 100%;
+  height: 80px;
+  background-color: #23063a;
+  padding: 0 2rem;
+}
+
+nav {
+  position: relative;
+}
+
+.logo {
+  width: 75px;
+  height: 75px;
+  margin-top: 5px;
+}
+
+.navbar-items {
+  position: absolute;
+  right: 0;
+  height: 80px;
+  line-height: 80px;
+  margin: 0px;
+  display: inline-block;
+  top: 1px;
+}
+
+.navbar-items li {
+  display: inline-block;
+  text-transform: uppercase;
+  margin-left: 30px;
+}
+
+.navbar-items li .fatura {
+  border: 2px solid #bebebe;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.navbar-items a {
+  color: #bebebe;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.navbar-items a:hover {
+  color: #878787;
+}
+
+.logo-text-container {
+  display: flex; /* Garante que imagem e texto fiquem lado a lado */
+  align-items: center; /* Centraliza verticalmente a imagem e o texto */
+}
+
+.navbar-text {
+  font-size: 20px; /* Ajuste do tamanho da fonte */
+  font-weight: bold; /* Negrito para destaque */
+  color: #bebebe; /* Certifique-se de que o texto seja visível */
+  margin: 0; /* Remove qualquer margem do texto */
+  position: relative; /* Permite ajustes precisos */
+  top: -30px;
+  align-items: center;
+}
+
+.default-btn {
+  padding: 15px;
+  background-color: #820bea;
+  border-radius: 5px;
+}
+
+.navbar-items .default-btn:hover {
+  background-color: #c404f9;
+}
+
+/* main bannere */
+.main-banner {
+  background-image: url("../IMG/mainbanner.png");
+  background-size: cover;
+  background-position: center;
+  padding: 10rem 0;
+}
+
+.main-banner h1,
+.main-banner p {
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: #000 3px 2px 3px;
+}
+
+.main-banner h1 {
+  font-size: 54px;
+}
+
+.main-banner p {
+  font-size: 32px;
+}
+
+/* Services */
+
+.services-container {
+  padding: 5rem 0;
+}
+
+.services-container ul {
+  display: flex;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.services-container li {
+  flex: 1 1 200px;
+  list-style: none;
+  text-align: center;
+  padding: 20px;
+}
+
+.fas {
+  font-size: 65px;
+  margin-bottom: 15px;
+}
+
+.fa-shield-alt {
+  color: #790fca;
+}
+.fa-rocket {
+  color: #790fca;
+}
+.fa-comments {
+  color: #790fca;
+}
+
+.services-container h3 {
+  margin-bottom: 25px;
+  color: #bebebe;
+}
+
+.services-container p {
+  line-height: 24px;
+}
+
+/* price and plans */
+
+.pricing-container {
+  padding-bottom: 5rem;
+  text-align: center;
+}
+
+.pricing-container h2 {
+  font-size: 36px;
+}
+
+.pricing-container p {
+  font-size: 20px;
+}
+
+.plans-container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 50px auto 0;
+}
+
+.plan {
+  flex: 1;
+  max-width: 275px;
+  margin: 0 20px;
+}
+
+.plan ul {
+  padding: 0;
+}
+
+.plan li {
+  list-style: none;
+  height: 50px;
+  line-height: 50px;
+  background-color: #e8e9ea;
+  color: #333;
+}
+
+.plan .price {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #820bea;
+  color: #fff;
+  text-align: center;
+  line-height: 120px;
+  margin: 0 auto -50px;
+  font-size: 18px;
+  position: relative;
+}
+
+.plan ul:hover {
+  transform: scale(1.2);
+  transition: 0.9s ease-in-out;
+}
+.plan .plan-btn:hover {
+  transform: scale(1.1);
+  transition: 0.9s ease-in-out;
+}
+
+.plan .plan-name {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #202b34;
+  padding: 50px 0;
+}
+
+.plan .plan-btn {
+  background-color: #c404f9;
+  color: #202b34;
+  font-size: 24px;
+  height: 75px;
+  line-height: 75px;
+  cursor: pointer;
+}
+
+/* search city */
+
+.searchcity-container {
+  background-color: #140620;
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.searchcity-container h2 {
+  color: #fff;
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.searchcity-container p {
+  color: #d5d5d5;
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+
+.searchcity-container input {
+  display: block;
+  border: none;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+.searchcity-container input[type="text"] {
+  width: 60%;
+  padding: 20px;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.searchcity-container input[type="submit"] {
+  background-color: #640ab1;
+  padding: 15px 30px;
+  color: #ffffff;
+  font-size: 24px;
+  cursor: pointer;
+  opacity: 0.85;
+}
+
+.searchcity-container input[type="submit"]:hover {
+  opacity: 1;
+}
