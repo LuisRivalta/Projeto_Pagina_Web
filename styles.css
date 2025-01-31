@@ -410,6 +410,8 @@ nav {
   .plans-container {
     flex-direction: column;
     width: 100%;
+    padding: 0 2rem;
+
   }
 
   .plan {
