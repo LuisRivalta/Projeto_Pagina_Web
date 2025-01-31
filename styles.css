@@ -357,5 +357,116 @@ nav {
   text-align: center;
   font-weight: bold;
   font-size: 15px;
-  margin: 75px 15px 75px;
+  margin: 75px 0;
 }
+
+/*  HAMBURGER */
+
+/* Esconder o checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Esconder o botão hambúrguer no desktop */
+.menu-label {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+/* responsive */
+
+/* small leptops */
+
+@media (max-width: 1110px) {
+  .plans-container {
+    width: 95%;
+  }
+
+  .plan {
+    margin: 0 5px;
+  }
+}
+
+/* tablet */
+
+@media (max-width: 900px) {
+  .navbar-container {
+    width: 100%;
+  }
+
+  .navbar-items li {
+    font-size: 12px;
+    margin: 0 15px;
+  }
+  .fatura {
+    right: 20px;
+  }
+}
+
+/* celular */
+@media (max-width: 576px) {
+  .plans-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .plan {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .contact-container {
+    padding: 3rem 2rem;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .contact-container input,
+  .contact-container textarea {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .services-container ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-banner p {
+    padding: 0 2rem;
+    font-size: 20px;
+  }
+  .navbar-items li {
+    font-size: 8px;
+    margin-left: 5px;
+    margin: 2px;
+  }
+
+  .navbar-items {
+    display: none;
+    flex-direction: column;
+    background-color: #222;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .menu-label {
+    display: block; /* Exibe o hambúrguer apenas no mobile */
+    position: absolute;
+    right: 20px; /* Posiciona ele na direita da navbar */
+    top: 15px;  
+  }
+  /* Exibir o menu quando o checkbox estiver marcado */
+  #menu-toggle:checked + .navbar-items {
+    display: flex;
+  }
+}
+
